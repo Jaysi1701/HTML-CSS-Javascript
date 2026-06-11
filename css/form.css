@@ -7,7 +7,7 @@ body{
     width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background: white;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -25,9 +25,12 @@ input{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 
 span{
+    display: block;
     color: red;
+    margin-top: 5px;
     font-size: 14px;
 }

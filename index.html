@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Form Validation</title>
-
     <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
 
-    <div class="form-content">
+<div class="form-content">
 
-        <h1>HTML5 Form Validation</h1>
+    <h1>HTML5 Form Validation</h1>
 
-        <form>
+    <form>
 
-            <label for="name">
-                First Name
-            </label>
+        <!-- First Name -->
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Enter First Name"
-                oninput="validateName()">
+        <label for="name">First Name</label>
 
-            <span id="nameError"></span>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter First Name"
+            oninput="validateName()">
 
-        </form>
+        <span id="nameError"></span>
 
-    </div>
 
-    <script src="./js/form.js"></script>
+        <!-- Email -->
+
+        <label for="email">Email</label>
+
+        <input
+            type="text"
+            id="email"
+            placeholder="Enter Email"
+            oninput="validateEmail()">
+
+        <span id="emailError"></span>
+
+    </form>
+
+</div>
+
+<script src="./js/form.js"></script>
 
 </body>
 </html>
