@@ -42,3 +42,26 @@ function validateEmail(){
         "Enter a valid email address";
     }
 }
+
+
+// UC3 - Mobile Validation
+
+function validateMobile(){
+
+    const mobile =
+        document.getElementById("mobile").value;
+
+    const error =
+        document.getElementById("mobileError");
+
+    const mobileRegex =
+        /^[0-9]{2}\s[0-9]{10}$/;
+
+    if(mobileRegex.test(mobile)){
+        error.textContent = "";
+    }
+    else{
+        error.textContent =
+        "Format should be 91 9876543210";
+    }
+}
