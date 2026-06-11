@@ -9,8 +9,8 @@ function validateName() {
 
     error.textContent =
         nameRegex.test(name)
-        ? ""
-        : "Name should start with Capital Letter and contain minimum 3 characters";
+            ? ""
+            : "Name should start with Capital Letter and contain minimum 3 characters";
 }
 
 
@@ -26,8 +26,8 @@ function validateEmail() {
 
     error.textContent =
         emailRegex.test(email)
-        ? ""
-        : "Enter a valid email address";
+            ? ""
+            : "Enter a valid email address";
 }
 
 
@@ -43,12 +43,12 @@ function validateMobile() {
 
     error.textContent =
         mobileRegex.test(mobile)
-        ? ""
-        : "Format should be 91 9876543210";
+            ? ""
+            : "Format should be 91 9876543210";
 }
 
 
-// UC4
+// UC5
 
 function validatePassword() {
 
@@ -59,10 +59,10 @@ function validatePassword() {
         document.getElementById("passwordError");
 
     const passwordRegex =
-        /^.{8,}$/;
+        /^(?=.*[A-Z])(?=.*[0-9])(?=[A-Za-z0-9]*[^A-Za-z0-9][A-Za-z0-9]*$).{8,}$/;
 
     error.textContent =
         passwordRegex.test(password)
-        ? ""
-        : "Password must contain minimum 8 characters";
+            ? ""
+            : "Password must contain minimum 8 characters, 1 uppercase letter, 1 number and exactly 1 special character";
 }
