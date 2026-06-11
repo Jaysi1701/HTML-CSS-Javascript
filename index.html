@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Validation</title>
+
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+
+    <div class="form-content">
+
+        <h1>HTML5 Form Validation</h1>
+
+        <form>
+
+            <label for="name">
+                First Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter First Name"
+                oninput="validateName()">
+
+            <span id="nameError"></span>
+
+        </form>
+
+    </div>
+
+    <script src="./js/form.js"></script>
+
+</body>
+</html>
